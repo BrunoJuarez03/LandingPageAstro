@@ -1,0 +1,96 @@
+---
+import { products } from '../../products.json'
+---
+
+<section>
+    <h1>NUESTROS PRODUCTOS</h1>
+    <ul>
+        {
+            products.map(({name, price, info, img})=>{
+                return(
+                <li>
+                    <img src={img}/>
+                    <article>
+                        <header>
+                            <h1>{name}</h1>
+                            <p>{info}</p>
+                        </header>
+                        <footer>
+                            <p>{price}</p>
+                        </footer>
+                    </article>
+                </li>)
+            })
+        }
+    </ul>
+</section>
+
+<style>
+    section{
+        width: 100%;        
+    }
+
+    ul{
+        display: grid;    }
+
+    li{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-inline: auto;
+        width: 70%;
+        height: 250px;
+        overflow: hidden;
+        display: inline-flex;
+        border-radius: 50px;
+        border: 1px solid lightgrey;
+    }
+    li img{
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        height: 100%;
+        transform: scaleX(-1);
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        background:
+        radial-gradient(circle at 100% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent),
+        radial-gradient(circle at 0% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent) 0 -50px;
+        background-color: slategray;
+        background-size:75px 100px;
+    }
+
+    article{
+        width: 60%;
+        height: 80%;
+        text-wrap: pretty;
+        margin: auto;
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+    article header{
+        height: 90%;
+        width: 100%;
+        border-bottom: 1px solid lightgray;
+    }
+
+    article header h1{
+        font-size: 3rem;
+    }
+
+    article header p{
+        font-size: 1.5rem;
+        color:#555;
+    }
+
+    article footer{
+        width: 100%;
+        padding: 10px;
+    }
+
+    article footer p{
+        
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+</style>
