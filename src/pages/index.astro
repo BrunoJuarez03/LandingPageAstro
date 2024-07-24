@@ -3,23 +3,31 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Presentacion from '../components/Presentacion.astro';
 import Productos from '../components/Productos.astro';
+import SobreNosotros from '../components/SobreNosotros.astro';
 ---
 
 <Layout title="Sublimaciones Don Castillo">
 	<main>
-		<div class="one">
-			<Header></Header>
-		</div>
+		<!-- <div class="one">
+			
+		</div>-->
 		<div class="two">
-			<Presentacion>
+			<Header></Header>
+			<Presentacion/>
 		</div>
 		<div class="three">
 			<Productos/>
+			
 		</div>
 		<div class="four">
 			footer
 		</div>
-		<div></div>
+		<div class="side">
+
+		</div>
+		<div class="side2">
+
+		</div>
 	</main>
 </Layout>
 
@@ -27,23 +35,65 @@ import Productos from '../components/Productos.astro';
 	main{
 		display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 100px repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+		background: rgb(255,127,62);
+        background: radial-gradient(circle, rgba(255,127,62,1) 43%, rgba(96,76,195,1) 100%);
 	}
 
-	.one{
-		grid-column: 1 / 7;
-	}
+	/*.one{
+		grid-column: 2/6;
+		border-left:1px solid;
+		border-right: 1px solid;
+		
+		
+	}*/
 	.two{
-		grid-column: 1 / 7;
-		
-		
+		grid-column: 2/6;
 	}
+
+	
+
 	.three{
-		grid-column: 1 / 7;
-		
+		grid-column: 2/6;
 	}
 	.four{
-		grid-column: 1 / 7;
-		
+		grid-column: 2/6;
 	}
+	
+	/*
+	.side{
+		grid-column:1/2;
+		grid-row: 1/4;
+		background-color: rgb(255, 246, 233);
+	}
+	.side2{
+		grid-column:6/7;
+		grid-row: 1/4;
+		background-color: rgb(255, 246, 233);
+	}
+		*/
+
+
+		@media screen and (max-width:480px) {
+
+			main{
+		display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+		background: rgb(255,127,62);
+        background: radial-gradient(circle, rgba(255,127,62,1) 43%, rgba(96,76,195,1) 100%);
+	}
+
+			.two{
+		            grid-column: 1/7;
+				}
+	        .three{
+		            grid-column: 1/7;
+	            }
+	        .four{
+		            grid-column: 1/7;
+	            }
+	
+		}
+
 </style>

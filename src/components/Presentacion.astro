@@ -3,67 +3,105 @@
 
 <section>
     <article>
-        <img src="/Logo1.svg" alt=""/>
-        <h1>¡Deja que tu creatividad brille con nosotros!</h1>
+       <header>
+            <div>
+                <h1>Quienes Somos?</h1>
+                <p> Profesionales en productos sublimados de la más alta calidad. Artículos personalizados para eventos, regalos corporativos o algo único, estamos aquí para ayudarte.</p>
+                <a href="">¡CONTACTANOS!</a>
+            </div>
+            <img src="/img/mugasset1.png" alt=""/>
+       </header>        
     </article>
-    <img src="/img/mugasset1.png" alt="">
-   
+    
 </section>
 
 <style>
-    section{
-        height: 500px;
-        display: flex;
-        justify-content: left;
-        border: 1px solid lightgray;
-        background:
-        radial-gradient(circle at 100% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent),
-        radial-gradient(circle at 0% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent) 0 -50px;
-        background-color: rgb(255, 127, 62);
-        background-size:75px 100px;
-    }
-    img{
-        aspect-ratio: 1/1;
-        object-fit: cover;
-        width: 50%;
+
+    article{
+        
+        height: 80%;
     }
 
-    li a{
-        color:#777;
-        display: inline-flex;
-        border: 1px solid #eee;
-        align-items: center;
-        justify-content: center;
-        padding: 4px;
-        height: 32px;
-        width: 32px;
-        border-radius: 6px;
+
+    article header{
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+        color: #FFF6E9;
+    }
+
+    article header div{
+        border-radius: 30px;
+        padding: 20px;
+        min-height: 300px;
+        min-width: 60%;
+        margin: auto;
+        box-shadow: 20px 20px 0px 2px rgba(0,0,0,0.75);
+        
+        background: rgb(255,127,62);
+        background: linear-gradient(13deg, rgba(255,127,62,1) 0%, rgba(96,76,195,1) 100%);
         transition: 0.3s;
     }
 
-    article{
-        margin: auto;
-       text-align: center;
-        height: 200px;
-        width: 40%;
-        border: 1px solid;
-        line-height: 3rem;
-        padding: 20px;
-    }
-
-    article h1{
-        text-align: center;
-        font-size: 2rem;
-    }
-
-    article img{
-        aspect-ratio: 1/1;
-        object-fit: cover;
-        width: 50px;
+    article header div:hover{
+        box-shadow: 10px 10px 0px 2px rgba(0,0,0,0.75);
+        transform: scale(1.1);
+        transition: 0.3s;
     }
 
     article header img{
         aspect-ratio: 1/1;
+        object-fit: scale-down;
+        height: 40%;
+        width: 40%;
+        margin: auto;
+       
+    }
+
+    article header a{
+        font-size: 2rem;
+        font-weight: 700;
         height: 50px;
+        border-radius: 30px;
+        padding: 10px;
+        color: #FFF6E9;
+        background: rgb(255,127,62);
+        background: linear-gradient(13deg, rgba(255,127,62,1) 0%, rgba(96,76,195,1) 100%);
+        transition: 0.2s;
+        box-shadow: 5px 5px 0px 2px rgba(0,0,0,0.75);
+    }
+
+    article header a:hover{
+        background: rgb(255,127,62);
+        background: linear-gradient(13deg, rgba(255,127,62,1) 0%, rgba(96,76,195,1) 100%);
+        box-shadow: 2.5px 2.5px 0px 2px rgba(0,0,0,0.75);
+        color: #80C4E9;
+        transition: 0.2s;
+    }
+
+    h1{
+        font-size: 4rem;
+        
+        margin-bottom: 20px;
+    }
+
+    p{ 
+        font-weight: 700;
+        font-size: 1.3rem;
+        text-wrap: pretty;
+        margin-bottom: 40px;
+    }
+
+    @media screen and (max-width:900px) {
+
+    article header{
+        display: grid;
+    }
+
+	a{visibility: hidden;}
+
+    div{
+        width: 100%;
+    }
     }
 </style>

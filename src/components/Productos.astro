@@ -3,8 +3,12 @@ import { products } from '../../products.json'
 ---
 
 <section>
-    <h1>NUESTROS PRODUCTOS</h1>
-    <ul>
+    <h1>- NUESTROS PRODUCTOS - </h1>
+    <p>Ofrecemos Tazas, parches, gorras, remeras, etc. Todo completamente personalizados!</p>
+    <div>
+        <img src="/img/mugasste2.png" alt="">
+    </div>
+<!--  <ul>
         {
             products.map(({name, price, info, img})=>{
                 return(
@@ -22,22 +26,69 @@ import { products } from '../../products.json'
                 </li>)
             })
         }
-    </ul>
+    </ul>-->   
 </section>
 
 <style>
     section{
-        width: 100%;        
+        width: 100%;   
+        text-align: center;  
     }
 
+    h1{
+        font-size: 4rem;
+    }
+
+    p{
+        font-size: 1.2rem;
+    }
+
+    img{
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        height: 400px;
+        width: 700px;
+       
+    }
+
+    div{
+        margin-top: 50px;
+        width: 100%;
+        background: rgb(255,127,62);
+        background: linear-gradient(13deg, rgba(255,127,62,1) 0%, rgba(96,76,195,1) 100%);
+        border-radius: 30px;
+        box-shadow: 10px 10px 0px 2px rgb(0, 0, 0, 0.75);
+        transition: 0.3s;
+    }
+
+    div:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+        box-shadow: 5px 5px 0px 2px rgb(0, 0, 0, 0.75);
+    }
+
+
+    @media screen and (max-width:900px) {
+	img{
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+	
+	}
+
+    /*
     ul{
-        display: grid;    }
+        display: grid;
+        margin: 100px;
+    }
 
     li{
+        text-align: left;
         margin-top: 10px;
         margin-bottom: 10px;
         margin-inline: auto;
-        width: 70%;
+        width: 60%;
         height: 250px;
         overflow: hidden;
         display: inline-flex;
@@ -52,8 +103,8 @@ import { products } from '../../products.json'
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;
         background:
-        radial-gradient(circle at 100% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent),
-        radial-gradient(circle at 0% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent) 0 -50px;
+        radial-gradient(circle at 100% 50%, transparent 20%, #17153B 21%, #17153B 34%, transparent 35%, transparent),
+        radial-gradient(circle at 0% 50%, transparent 20%, #17153B 21%, #17153B 34%, transparent 35%, transparent) 0 -50px;
         background-color: slategray;
         background-size:75px 100px;
     }
@@ -92,5 +143,5 @@ import { products } from '../../products.json'
         text-align: center;
         font-size: 1.5rem;
     }
-
+*/
 </style>

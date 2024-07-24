@@ -3,47 +3,60 @@
 ---
 
 <header>
-   <h1>Bienvenido!</h1>
-    <img src="/Logo1.svg" alt="">
-    <div>
-    <a href="">Realizar pedido</a>
-   </div>
+   <h1>¡Bienvenido!</h1>
+   <img src="/Logo1.svg" alt="">
+   <a href="http://wa.link/koephw">Realizar pedido</a> 
 </header>
 
 <style>
    header{
-      width: 100%;
-      height: 100px;
-      display: inline-flex;
-      justify-content: space-between;
+      color: #FFF6E9;
+      display: grid;
       padding: 10px;
-      position: fixed;
-      background-color: white;
+      grid-template-columns: repeat(3, 1fr);
    }
 
    img{
-      margin-inline: 0;
+      filter: invert(100%) sepia(59%) saturate(598%) hue-rotate(302deg) brightness(96%) contrast(115%);
       margin: auto;
       height: 80px;
    }
 
    h1{
-      margin: auto;
-      margin-left: 0;
+      margin-top: auto;
+      margin-bottom: auto;
    }
 
-   div{
 
-      margin: auto;
+   a{
+      color: #FFF6E9;
+      margin:auto;
       margin-right: 0;
-      height: 3rem;
-      line-height: 3rem;
-      border-left: 1px solid;
-      border-radius: 50px;
-      padding-inline: 10px;
+      font-size: 1.2rem;
+      border-radius: 30px;
+      width: fit-content;
+      padding: 10px;
+      font-weight: 700;
+      transition: 0.2s;
+      box-shadow: 5px 5px 0px 2px rgba(0,0,0,0.75);
+      background: rgb(255,127,62);
+      background: linear-gradient(13deg, rgba(255,127,62,1) 0%, rgba(96,76,195,1) 100%);
    }
 
-   div a{
-      font-size: 1rem;
+   a:hover{
+      color: #80C4E9;
+      transition: 0.2s;
+      box-shadow: 2.5px 2.5px 0px 2px rgba(0,0,0,0.75);
    }
+
+   @media screen and (max-width:480px){
+      img{
+         visibility: hidden;
+      }
+
+      a{
+         text-align: center;
+      }
+   }
+
 </style>
