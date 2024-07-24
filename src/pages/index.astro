@@ -14,6 +14,7 @@ import SobreNosotros from '../components/SobreNosotros.astro';
 		<div class="two">
 			<Header></Header>
 			<Presentacion/>
+			<SobreNosotros></SobreNosotros>
 		</div>
 		<div class="three">
 			<Productos/>
@@ -35,7 +36,7 @@ import SobreNosotros from '../components/SobreNosotros.astro';
 	main{
 		display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
 		background: rgb(255,127,62);
         background: radial-gradient(circle, rgba(255,127,62,1) 43%, rgba(96,76,195,1) 100%);
 	}
@@ -50,8 +51,6 @@ import SobreNosotros from '../components/SobreNosotros.astro';
 	.two{
 		grid-column: 2/6;
 	}
-
-	
 
 	.three{
 		grid-column: 2/6;
@@ -79,7 +78,7 @@ import SobreNosotros from '../components/SobreNosotros.astro';
 			main{
 		display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 1fr 1fr 1fr;
+        
 		background: rgb(255,127,62);
         background: radial-gradient(circle, rgba(255,127,62,1) 43%, rgba(96,76,195,1) 100%);
 	}

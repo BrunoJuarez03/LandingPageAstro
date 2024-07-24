@@ -1,18 +1,83 @@
 ---
 ---
 
-<section>
+
 <article>
     <header>
+        <img src="/img/products.webp" alt="">
         
     </header>
     <footer>
+        <div>
+            <h1>Donde operamos?</h1>
+            <p>Lules, San miguel de Tucuman, San pablo Y manantial</p>
+        </div>
     </footer>
 </article>
-</section>
+
 <style>
 
-    section{
-    }
+article{
+    width: 80%;
+    background: rgb(255,127,62);
+    background: linear-gradient(13deg, rgba(255,127,62,1) 0%, rgba(96,76,195,1) 100%);
+    margin-inline: auto;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 20px 20px 0px 2px rgb(0,0,0,0.75);
+}
+
+article:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 10px 0px 2px rgb(0,0,0,0.75);
+    transition: 0.3s;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    min-height: 400px;
+    height: 400px;
+    justify-content: space-between;
+    margin: auto;
+    border-bottom: 1px solid #FFF6E9;
+}
+
+footer{
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+img{
+    aspect-ratio: 1/1;
+        object-fit: scale-down;
+        height: 100%;
+        width: 100%;
+}
+
+footer div{
+    font-size: 3rem;
+    color: #FFF6E9;
+    width: 100%; 
+    margin: auto;
+}
+
+p{ 
+    text-align: center;
+    font-size: 1.5rem;
+    text-wrap: pretty;
+    font-weight: 700;
+}
+
+@media screen and (max-width:480px){
+
+    header{}
+    
+}
+
 
 </style>
