@@ -1,5 +1,5 @@
 ---
-import 
+import {redes} from '../../products.json'
 ---
 
 <footer>
@@ -8,7 +8,12 @@ import
             <h1>Nuestas Redes</h1>
             <ul>
                 {
-
+                    redes.map(({icon, url}) => {
+                        return<li>
+                            <img src={icon} alt=""/>
+                            <a href={url}></a>
+                        </li>
+                    })
                 }
             </ul>
         </header>
