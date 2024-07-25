@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Presentacion from '../components/Presentacion.astro';
 import Productos from '../components/Productos.astro';
 import SobreNosotros from '../components/SobreNosotros.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="Sublimaciones Don Castillo">
@@ -21,7 +22,7 @@ import SobreNosotros from '../components/SobreNosotros.astro';
 			
 		</div>
 		<div class="four">
-			footer
+			<Footer></Footer>
 		</div>
 		<div class="side">
 
@@ -36,7 +37,7 @@ import SobreNosotros from '../components/SobreNosotros.astro';
 	main{
 		display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: min-content auto;
 		background: rgb(255,127,62);
         background: radial-gradient(circle, rgba(255,127,62,1) 43%, rgba(96,76,195,1) 100%);
 	}
@@ -78,7 +79,7 @@ import SobreNosotros from '../components/SobreNosotros.astro';
 			main{
 		display: grid;
         grid-template-columns: repeat(6, 1fr);
-        
+        grid-template-rows: min-content auto;
 		background: rgb(255,127,62);
         background: radial-gradient(circle, rgba(255,127,62,1) 43%, rgba(96,76,195,1) 100%);
 	}

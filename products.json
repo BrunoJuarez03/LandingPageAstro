@@ -8,16 +8,34 @@
         "name":"Remera de Algodón",
         "price":"$10.000,00", 
         "info":"loreip admasdn aas dasdj olmasdas ",
-        "img":"/img/mugasset2.png"
+        "img":"/img/pngegg.png"
     },{
         "name":"Taza Ceramica",
-        "price":"$7000,00", 
+        "price":"$7.000,00", 
         "info":"loreip admasdn aas dasdj olmasdas ",
         "img":"/img/mugasset1.png"
     },{
-        "name":"Parche 7x7",
-        "price":"$2000,00", 
+        "name":"Parches",
+        "price":"$2.000,00", 
         "info":"loreip admasdn aas dasdj olmasdas ",
-        "img":"/img/mugasset2.png"
+        "img":"/img/patchasset.webp"
+    },{
+        "name":"Taza Magica",
+        "price":"$10.000,00", 
+        "info":"loreip admasdn aas dasdj olmasdas ",
+        "img":"/img/magicmugasset.webp"
+    }],
+    "redes":[{
+        "icon":"/img/instagram.png",
+        "url":"https://www.instagram.com/sublimacionesdoncastillo/",
+        "text":""
+    },{
+        "icon":"/img/facebook.png",
+        "url":"https://www.instagram.com/sublimacionesdoncastillo/",
+        "text":""
+    },{
+        "icon":"/img/wp.png",
+        "url":"https://wa.link/najvkt",
+        "text":""
     }]
 }
