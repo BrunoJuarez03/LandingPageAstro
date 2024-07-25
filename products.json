@@ -2,27 +2,27 @@
     "products":[{
         "name":"Taza Plastica",
         "price":"$3.000,00", 
-        "info":"loreip admasdn aas dasdj olmasdas ",
+        "info":"Taza blanca plastica 350cc / 9.3 cm de alto x 8 cm de diámetro. ",
         "img":"/img/mugasset1.png"
     },{
         "name":"Remera de Algodón",
-        "price":"$10.000,00", 
-        "info":"loreip admasdn aas dasdj olmasdas ",
+        "price":"$̶1̶0̶.̶0̶0̶0̶,̶0̶0̶", 
+        "info":"No disponible ahora mismo...",
         "img":"/img/pngegg.png"
     },{
         "name":"Taza Ceramica",
         "price":"$7.000,00", 
-        "info":"loreip admasdn aas dasdj olmasdas ",
+        "info":"Taza blanca ceramica 350cc / 9.5 cm de alto x 8 cm de diámetro. ",
         "img":"/img/mugasset1.png"
     },{
         "name":"Parches",
-        "price":"$2.000,00", 
-        "info":"loreip admasdn aas dasdj olmasdas ",
+        "price":"$̶2̶.̶0̶0̶0̶,̶0̶0̶", 
+        "info":"No disponible ahora mismo...",
         "img":"/img/patchasset.webp"
     },{
         "name":"Taza Magica",
-        "price":"$10.000,00", 
-        "info":"loreip admasdn aas dasdj olmasdas ",
+        "price":"$̶1̶0̶.̶0̶0̶0̶,̶0̶0̶", 
+        "info":"No disponible ahora mismo...",
         "img":"/img/magicmugasset.webp"
     }],
     "redes":[{
