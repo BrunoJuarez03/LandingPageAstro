@@ -3,27 +3,58 @@ import {redes} from '../../products.json'
 ---
 
 <footer>
+    <h1>Nuestas Redes</h1>
+    <p>Contactanos para hacer tu order o consultar ¡Te estamos Esperando!</p>
     <article>
         <header>
-            <h1>Nuestas Redes</h1>
+            
             <ul>
                 {
                     redes.map(({icon, url}) => {
-                        return<li>
-                            <img src={icon} alt=""/>
-                            <a href={url}></a>
-                        </li>
+                        return(<li>
+                            
+                            <a href={url}><img src={icon} alt=""/></a>
+                        </li>)
                     })
                 }
             </ul>
         </header>
     </article>
+    <img src="/Logo1.svg" alt="">
 </footer>
 
 <style>
     footer{
-        height: 200px;
-        width: 100%;
-        background-color: orangered;
+        text-align: center;
+        padding: 20px;
+        min-height: 300px;
+        width: 50%;
+        color: #FFF6E9;
+        margin: auto;
+    }
+
+    ul{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin: 20px;
+    }
+
+    p{
+        font-size: 1.2rem;
+    }
+
+    li img{
+        aspect-ratio: 1/1;
+        object-fit: contain;
+        height: 30px;
+        width: 30px;
+        filter: invert(100%) sepia(59%) saturate(598%) hue-rotate(302deg) brightness(96%) contrast(115%);
+    }
+
+    img{
+        filter: invert(100%) sepia(59%) saturate(598%) hue-rotate(302deg) brightness(96%) contrast(115%);
+      margin: auto;
+      height: 100px;
     }
 </style>
