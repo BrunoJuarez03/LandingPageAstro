@@ -1,0 +1,23 @@
+{
+    "products":[{
+        "name":"Taza Plastica",
+        "price":"$3.000,00", 
+        "info":"loreip admasdn aas dasdj olmasdas ",
+        "img":"/img/mugasset1.png"
+    },{
+        "name":"Remera de Algodón",
+        "price":"$10.000,00", 
+        "info":"loreip admasdn aas dasdj olmasdas ",
+        "img":"/img/mugasset2.png"
+    },{
+        "name":"Taza Ceramica",
+        "price":"$7000,00", 
+        "info":"loreip admasdn aas dasdj olmasdas ",
+        "img":"/img/mugasset1.png"
+    },{
+        "name":"Parche 7x7",
+        "price":"$2000,00", 
+        "info":"loreip admasdn aas dasdj olmasdas ",
+        "img":"/img/mugasset2.png"
+    }]
+}

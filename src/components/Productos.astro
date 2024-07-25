@@ -1,19 +1,45 @@
 ---
-
+import { products }  from '../../products.json';
 ---
 
 <section>
     <h1>- NUESTROS PRODUCTOS - </h1>
-    <p>Ofrecemos Tazas, parches, gorras, remeras, etc. Todo completamente personalizados!</p>
+    <p>Ofrecemos Tazas, parches, gorras, remeras, etc. Todo completamente personalizado!</p>
+    <div>
+        <ul>
+            {
+                products.map(({name, price, info, img}) =>{
+                    return(<li>
+                            <img src={img} alt=""/>
+                            <article>
+                                <header>
+                                    <h3>{name}</h3>
+                                    <p>{info}</p>
+                                </header>
+                                <footer>
+                                    <p>{price}</p>
+                                </footer>
+                            </article>
+                    </li>)
+                })
+            }
+        </div>
+    </article>
 </section>
 
 <style>
     section{
-        margin-top: 30px;
+        margin-top: 100px;
+        margin-bottom: 100px;
         padding: 10px;
         width: 100%;   
         text-align: center; 
-        background-color: #FFF6E9; 
+        
+    }
+
+    div{
+        width: 100%;
+        
     }
 
     h1{
@@ -24,11 +50,46 @@
         font-size: 1.5rem;
     }
 
+    ul{
+        margin-top: 50px;
+    }
+
+    article{
+        width: 70%;
+        background-color: aliceblue;
+    }
+
+    article header{
+        text-align: left;
+        padding: 10px;
+        height: 70%;
+    }
+
+    article header p{
+        font-size: 1rem;
+    }
+
+    li{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(33, 72, 107);
+        margin-bottom: 10px;
+        margin-inline: auto;
+    }
+
+    li img{
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        width: 20%;
+        height: 100%;
+        margin: auto;
+    }
 
     @media screen and (max-width:900px) {
 	
         h1{
-            font-size: 2rem;
+            font-size: 1rem;
         }
 	
 	}
