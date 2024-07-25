@@ -1,6 +1,6 @@
 {
     "products":[{
-        "name":"Taza Plastica",
+        "name":"Taza Plástica",
         "price":"$3.000,00", 
         "info":"Taza blanca plastica 350cc / 9.3 cm de alto x 8 cm de diámetro. ",
         "img":"/img/mugasset1.png"
@@ -10,7 +10,7 @@
         "info":"No disponible ahora mismo...",
         "img":"/img/pngegg.png"
     },{
-        "name":"Taza Ceramica",
+        "name":"Taza Cerámica",
         "price":"$7.000,00", 
         "info":"Taza blanca ceramica 350cc / 9.5 cm de alto x 8 cm de diámetro. ",
         "img":"/img/mugasset1.png"
@@ -20,7 +20,7 @@
         "info":"No disponible ahora mismo...",
         "img":"/img/patchasset.webp"
     },{
-        "name":"Taza Magica",
+        "name":"Taza Mágica",
         "price":"$̶1̶0̶.̶0̶0̶0̶,̶0̶0̶", 
         "info":"No disponible ahora mismo...",
         "img":"/img/magicmugasset.webp"
